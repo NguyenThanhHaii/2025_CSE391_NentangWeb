@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR Management</title>
+    <!-- link style bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid me-3">
+        <a class="navbar-brand" href="#">HR MANAGEMENT</a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Employee</h2>
+        <button class="btn btn-primary">+ Add</button>
+      </div>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Position</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Fatima Beatriz</td>
+            <td>Fatima Beatriz@gmail.com</td>
+            <td>0985674321</td>
+            <td>Staff</td>
+            <td>
+              <button class="btn btn-warning btn-sm me-2">Edit</button>
+              <button class="btn btn-danger btn-sm">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Gabriel Hanna</td>
+            <td>Gabriel Hanna@gmail.com</td>
+            <td>0353674231</td>
+            <td>Staff</td>
+            <td>
+              <button class="btn btn-warning btn-sm me-2">Edit</button>
+              <button class="btn btn-danger btn-sm">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Charles Diya</td>
+            <td>Charles Diya@gmail.com</td>
+            <td>0347568833</td>
+            <td>Staff</td>
+            <td>
+              <button class="btn btn-warning btn-sm me-2">Edit</button>
+              <button class="btn btn-danger btn-sm">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Frank Lamdo</td>
+            <td>Frank Lamdo@gmail.com</td>
+            <td>0975444768</td>
+            <td>Manager</td>
+            <td>
+              <button class="btn btn-warning btn-sm me-2">Edit</button>
+              <button class="btn btn-danger btn-sm">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Louis Tom</td>
+            <td>Louis Tom@gmail.com</td>
+            <td>0879568223</td>
+            <td>Staff</td>
+            <td>
+              <button class="btn btn-warning btn-sm me-2">Edit</button>
+              <button class="btn btn-danger btn-sm">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container w-50">
+      <div class="card mt-4">
+        <div
+          class="d-flex justify-content-between py-3 card-header bg-primary text-white"
+        >
+          <h5 class="mb-0">New Employee</h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="row mb-3">
+              <div class="col">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="col">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="text" class="form-control" id="phone" />
+              </div>
+              <div class="col">
+                <label for="position" class="form-label">Position</label>
+                <select class="form-select" id="position">
+                  <option selected>-- Select Position --</option>
+                  <option value="Staff">Staff</option>
+                  <option value="Manager">Manager</option>
+                  <option value="CEO">CEO</option>
+                </select>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Sex</label><br />
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="sex"
+                  id="male"
+                  value="Male"
+                />
+                <label class="form-check-label" for="male">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="sex"
+                  id="female"
+                  value="Female"
+                />
+                <label class="form-check-label" for="female">Female</label>
+              </div>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-end">
+              <button
+                type="button"
+                class="btn btn-secondary me-2"
+                id="cancelBtn"
+              >
+                Cancel
+              </button>
+              <button type="button" class="btn btn-success" id="saveBtn">
+                Save
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
